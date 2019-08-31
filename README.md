@@ -1,5 +1,6 @@
 # insect-identification-crowdsourcing-website
 The code written by myself can be found in `/src`
+The published and hosted website can be found at https://bourse2-ec574.web.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
