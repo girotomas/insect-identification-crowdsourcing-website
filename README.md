@@ -2,6 +2,8 @@
 The code written by myself can be found in `/src`
 The published and hosted website can be found at https://bourse2-ec574.web.app/
 
+This website helps users identify insects by croudsourcing. You can upload a picture and the users of the app (There is an Android app associated with the webiste) will be notified with a message. The other users can comment the name of the insect.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
