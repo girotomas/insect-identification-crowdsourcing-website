@@ -34,7 +34,7 @@ export class App extends Component {
       .firestore()
       .collection("images")
       .orderBy("date", 'desc')
-      .limit(3)
+      .limit(100)
       .onSnapshot(querySnapshot => {
         this.setState({urls:[]})
         querySnapshot.forEach(doc => {
@@ -101,12 +101,13 @@ export class App extends Component {
 
   render() {
     //affiliate add
-    var iframe = <a target="_blank"  href="https://www.amazon.fr/gp/product/0754819094/ref=as_li_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=0754819094&linkCode=as2&tag=girotomas-21&linkId=48e5e1efe4af59b657c36f8b8c9792ec"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=0754819094&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=girotomas-21" ></a>
+    var iframe = <a target="_blank"  style={{width:'80%', height:'70%'}} href="https://www.amazon.fr/gp/product/0754819094/ref=as_li_tl?ie=UTF8&camp=1642&creative=6746&creativeASIN=0754819094&linkCode=as2&tag=girotomas-21&linkId=48e5e1efe4af59b657c36f8b8c9792ec"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=0754819094&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=girotomas-21" ></img></a>
 
     return (
       <div className="App">
         <header className="App-header">
           <p>Ask help of other users to identify the species you find!!</p>
+          <p>you can buy this book at amazon by clicking on the image</p>
           {iframe}
           <form>
             <label>Upload the image of your insect:</label>
