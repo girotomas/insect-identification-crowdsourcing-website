@@ -98,13 +98,20 @@ export class App extends Component {
         );
       });
   };
+
   render() {
+    //affiliate add
+    var iframe = <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=FR&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=girotomas-21&marketplace=amazon&amp;region=FR&placement=0754819094&asins=0754819094&linkId=0338015d72ccddf0f05636bd057b63c7&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+
     return (
       <div className="App">
         <header className="App-header">
-          <p>Ask help of other users to identify the species you find.</p>
+          <p>Ask help of other users to identify the species you find!!</p>
+          {iframe}
           <form>
             <label>Upload the image of your insect:</label>
+          
 
             <FileUploader
               accept="image/*"
